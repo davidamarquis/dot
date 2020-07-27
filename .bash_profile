@@ -19,4 +19,3 @@ alias ls='ls -Gla'
 # completion
 bind 'set completion-ignore-case on'
 bind 'set show-all-if-ambiguous on'
-

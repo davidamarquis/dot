@@ -1,0 +1,39 @@
+*.diff
+
+# writing 
+*.dvi
+*.txt
+*.pdf
+*.fdb_latexmk
+*.fls
+*.aux
+*.bbl
+*.blg
+*.log
+*.gz
+
+# vim
+*.swp
+
+# IntelliJ 
+*.idea/workspace.xml
+
+# Pytest
+.pytest_cache
+
+.DS_STORE
+venv/*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# CYTHON 
+*.pyc, 
+*.so
+*.c
+
+*.eggs
+util.egg-info/*
+*.egg-info
