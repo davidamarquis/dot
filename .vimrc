@@ -8,10 +8,10 @@ set foldmethod=syntax
 set nocursorline
 set nocompatible
 set backspace=indent,eol,start
-syntax on
-
-au FileType tex setlocal nocursorline
-au FileType tex :NoMatchParen
+set noexpandtab
+" dont let vim do automatic indents
+set nocindent nosmartindent noautoindent
+set indentexpr=
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -59,4 +59,5 @@ colorscheme monokai
 
 execute pathogen#infect()
 syntax on
-filetype plugin indent on
+"change to filetype plugin indent on to enable indent
+filetype plugin on

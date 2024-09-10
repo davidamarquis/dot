@@ -3,6 +3,7 @@
 LS_COLORS=$LS_COLORS:'di=0;34:' ; export LS_COLORS
 export PS1="\[\033[38;5;154m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;172m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 
+export PATH="/opt/homebrew/lib:/usr/local/lib:$PATH"
 alias ga='git add -i'
 alias gs='git status'
 alias gc='git commit -m'
@@ -19,3 +20,7 @@ alias ls='ls -Gla'
 # completion
 bind 'set completion-ignore-case on'
 bind 'set show-all-if-ambiguous on'
+
+# git completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
