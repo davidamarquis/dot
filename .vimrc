@@ -50,14 +50,8 @@ command! Sec call SearchSection()
 "map the leader key so its easy to hit
 let mapleader = ","
 
-"execute pathogen#infect()
-"syntax on
-"filetype plugin indent on
-
 syntax enable
 colorscheme monokai
 
-execute pathogen#infect()
-syntax on
 "change to filetype plugin indent on to enable indent
 filetype plugin on
